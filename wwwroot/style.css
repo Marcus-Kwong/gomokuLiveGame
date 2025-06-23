@@ -1,0 +1,37 @@
+/* 设置页面基础字体与背景 */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* 顶部导航栏样式 */
+header {
+    background-color: #444;
+    color: white;
+    padding: 1rem;
+}
+
+/* 导航链接样式 */
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* 主体内容区域样式 */
+main {
+    padding: 2rem;
+}
+
+/* 按钮样式 */
+button {
+    padding: 0.5rem 1rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
