@@ -1,0 +1,5 @@
+services:
+  gomokulivegame:
+    build: .
+    ports:
+      - "18080:18080"
