@@ -1,5 +1,6 @@
 services:
   gomokulivegame:
+    image: gomokulivegameapp:latest
     build: .
     ports:
       - "18080:18080"
@@ -7,8 +8,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.8'           # 限制最多使用 0.8 核 CPU（建议不超过 1）
-          memory: 300m          # 限制最大内存为 300MB
+          cpus: '0.8'           
+          memory: 300m          
         reservations:
-          cpus: '0.2'           # 保留 0.2 核给这个服务（非强制）
-          memory: 100m          # 保留 100MB（低水位）
+          cpus: '0.2'           
+          memory: 100m          
