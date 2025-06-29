@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+<form method="post" asp-controller="Auth" asp-action="Register">
+    <label>Username:</label>
+    <input type="text" name="username" required /><br />
+    <label>Password:</label>
+    <input type="password" name="password" required /><br />
+    <label>Confirm Password:</label>
+    <input type="password" name="confirmPassword" required /><br />
+    <button type="submit">Register</button>
+</form>
+
+<p style="color:red">@ViewBag.Message</p>
+<a href="/Auth/Login">Already have an account? Login</a>
